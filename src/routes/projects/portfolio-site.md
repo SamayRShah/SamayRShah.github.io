@@ -8,7 +8,6 @@ end: 01-2026
 description:
     - Created 3D portfolio website in svelte to learn svelte, and 3js
     - Created CRT shader with bit crushing, scan lines, pixelization and vignette effects
-    - samayrshah.github.io/igme-470
 preview: /assets/images/portfolio-website.png
 ---
 
