@@ -16,7 +16,7 @@
 	};
 </script>
 
-<div bind:this={element} use:portalAction class={cn('fixed inset-0 z-100', classNames)}>
+<div bind:this={element} use:portalAction class={cn('fixed inset-0 z-100 pointer-events-none', classNames)}>
 	{@render children?.()}
 </div>
 
