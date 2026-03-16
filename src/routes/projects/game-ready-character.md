@@ -3,7 +3,7 @@ title: "Game-Ready Character"
 display_title: "Game-ready<br>Character"
 skills: [Unreal Engine, Substance Painter, maya, rigging, texturing]
 position: "Technical Artist"
-categories: academic solo
+categories: academic
 start: 04-2025
 end: 04-2025
 description:

@@ -2,6 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 	import { media } from '$lib/utils';
+	import { resolve } from '$app/paths';
 
 	const { projects = [], onProjectHover = () => {}, onMainHover = () => {} } = $props();
 
@@ -95,14 +96,14 @@
 	</button>
 	<ul class="list projects" bind:this={projectList}>
 		<li class="item project">
-			<a href="/resume" class="main-link" onpointerenter={onMainHover}> Resume </a>
+			<a href={resolve("/summary")} class="main-link" onpointerenter={onMainHover}> Summary </a>
 		</li>
 
 		<hr />
 
-		{#each projects as project, i}
+		{#each projects as project (project.path)}
 			<li class="item project">
-				<a href={project.path} class="project-link" onpointerenter={() => onProjectHover(project)}>
+				<a href={resolve(project.path)} class="project-link" onpointerenter={() => onProjectHover(project)}>
 					{@html project.meta.display_title}
 				</a>
 			</li>
@@ -117,7 +118,7 @@
 	@reference "tailwindcss";
 
 	.wrapper {
-		@apply max-md:fixed max-md:inset-x-0 max-md:bottom-20 max-md:flex max-md:items-center max-md:justify-between max-md:overflow-hidden max-md:px-12;
+		@apply max-md:fixed max-md:inset-x-0 max-md:top-20 max-md:flex max-md:items-center max-md:justify-between max-md:overflow-hidden max-md:px-12;
 
 		button {
 			@apply cursor-pointer md:hidden;
@@ -125,7 +126,7 @@
 
 		.list {
 			@apply list-none font-serif transform-3d;
-			@apply md:pointer-events-none md:absolute md:right-8 md:pt-[65vh] md:pb-[65vh] md:perspective-midrange;
+			@apply md:pointer-events-none md:absolute md:right-8 md:pt-[5vh] md:pb-[5vh] md:perspective-midrange;
 			@apply max-md:flex max-md:snap-x max-md:snap-mandatory max-md:overflow-x-scroll;
 
 			hr {

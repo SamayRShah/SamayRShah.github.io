@@ -2,7 +2,7 @@
 title: "DirectX 11 Renderer"
 display_title: "DirectX 11<br>Renderer"
 skills: c++ directX11 HLSL
-categories: academic solo
+categories: academic
 position: "Graphics Programmer"
 start: 01-2025
 end: 04-2025
@@ -12,6 +12,9 @@ description:
     - Built an in-engine UI using ImGui to visualize render pipeline stages and provide real-time control over scene composition, entity properties, materials, and rendering settings
 preview: /assets/images/directx-renderer.png
 ---
+
+## Github
+[https://github.com/SamayRShah/IGME540](https://github.com/SamayRShah/IGME540)
 
 ## Overview
 A custom real-time rendering engine built to explore modern graphics techniques and low-level engine development.

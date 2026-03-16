@@ -1,4 +1,5 @@
 <script>
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { cn } from '$lib/utils';
 	import { socials } from '$lib/data';
 	import { Github, Linkedin, Mail } from '@lucide/svelte';
@@ -10,9 +11,9 @@
 </script>
 
 <ul class={cn(defaultClasses, classNames)}>
-	{#each socials as social}
+	{#each socials as social (social.link)}
 		<li class="text-orange-200 opacity-50 hover:text-orange-500 hover:opacity-100">
-			<a href={social.link} aria-label={social.name}>
+			<a href={social.link} target="_blank" rel="noopener noreferer" aria-label={social.name}>
 				{#if icons[social.icon]}
                     {@const ActiveIcon = icons[social.icon]}
 					<ActiveIcon class="size-{size}" />

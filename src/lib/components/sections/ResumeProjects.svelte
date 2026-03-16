@@ -4,6 +4,7 @@
 	import Tags from '$lib/components/Tags.svelte';
 	import DateRange from '$lib/components/DateRange.svelte';
 	import Description from '../Description.svelte';
+	import { resolve } from '$app/paths';
 
 	onMount(async () => {
 		const response = await fetch(`/api/projects`);
@@ -16,9 +17,9 @@
 <section>
 	<h2 class="mb-2">Projects</h2>
 	<ul class="not-prose list-none">
-		{#each projects as project}
+		{#each projects as project (project.path)}
 			<li>
-				<a href={project.path} class="group">
+				<a href={resolve(project.path)} class="group">
 					<div class="flex justify-between p-1">
 						<h3 class="group-hover:-translate-x-2">{project.meta.title}</h3>
 						<DateRange

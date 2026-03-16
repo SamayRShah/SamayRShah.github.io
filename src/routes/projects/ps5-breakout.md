@@ -2,7 +2,7 @@
 title: "PS5 Breakout"
 display_title: "PS5 Break-<br>out"
 skills: c++ HLSL
-categories: academic solo
+categories: academic
 start: 11-2025
 end: 11-2025
 description:
@@ -13,7 +13,7 @@ preview: /assets/images/break-out.png
 
 ## Overview
 
-This is a solo graphics programming project built in C++ using proprietary PlayStation 5 graphics libraries. The project explores low-level rendering architecture and GPU instanced rendering through a modern implementation of a classic Breakout-style game.
+This is a graphics programming project built in C++ using proprietary PlayStation 5 graphics libraries. The project explores low-level rendering architecture and GPU instanced rendering through a modern implementation of a classic Breakout-style game.
 
 ## Rendering & Architecture
 

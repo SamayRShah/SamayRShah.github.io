@@ -5,7 +5,7 @@
 		<nav>
 			<ul class="align-center flex flex-row justify-end gap-4 md:gap-6 text-sm md:text-lg">
 				<li>
-					<a class="p-1 px-2 md:p-2 md:px-4 border-2 rounded-lg text-orange-200 hover:text-orange-500 hover:border-orange-500" href="/resume">Resume</a>
+					<a class="p-1 px-2 md:p-2 md:px-4 border-2 rounded-lg text-orange-200 hover:text-orange-500 hover:border-orange-500" href="/summary">Summary</a>
 				</li>
 				<li>
 					<a class="text-orange-200 hover:text-orange-500" href="mailto:srs6812@rit.edu">srs6812@rit.edu</a>

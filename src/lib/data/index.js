@@ -4,7 +4,7 @@ export const socials = [
 	{ name: 'Email', icon: 'Mail', link: 'mailto:srs6812@rit.edu' }
 ];
 
-export const experiences = [
+export const experience = [
 	{
 		name: 'Ritz RIT',
 		href: 'https://www.rit.edu/dining/location/ritz',

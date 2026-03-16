@@ -2,7 +2,6 @@
 	import Tags from '$lib/components/Tags.svelte';
 	import ProjectPreview from '$lib/components/ProjectPreview.svelte';
 	import ProjectsList from '$lib/components/ProjectsList.svelte';
-	import { normalizeList } from '$lib/utils';
 	import Threlte from '$lib/components/three/Threlte.svelte';
 
 	const { data } = $props();

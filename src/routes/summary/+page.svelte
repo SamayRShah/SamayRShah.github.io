@@ -2,12 +2,9 @@
 	import Skills from '$lib/components/sections/Skills.svelte';
 	import ExperienceEducation from '$lib/components/sections/ExperienceEducation.svelte';
 	import Socials from '$lib/components/Socials.svelte';
-	import Tags from '$lib/components/Tags.svelte';
-	import * as Tabs from '$lib/components/ui/tabs/index.js';
 	import { MapPin } from '@lucide/svelte/icons';
 	import ResumeProjects from '$lib/components/sections/ResumeProjects.svelte';
 	import { about } from '$lib/data/index.js';
-	const { data } = $props();
 </script>
 
 <article class="container prose prose-invert pl-0 pr-0">
@@ -22,7 +19,7 @@
 		</p>
 		<Socials class="not-prose gap-3" size="5" />
 	</section>
-    <ExperienceEducation />
 	<Skills class="not-prose"/>
 	<ResumeProjects />
+    <ExperienceEducation />
 </article>
